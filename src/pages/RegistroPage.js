@@ -1,6 +1,6 @@
-const ContactoPage = (props) => {
+const RegistroPage = (props) => {
     return(
         <div>esta es la navegacion</div>
     );
 }
-export default ContactoPage;
+export default RegistroPage;
