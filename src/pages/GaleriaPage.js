@@ -1,6 +1,6 @@
 const GaleriaPage = (props) => {
     return(
-        <div>esta es la navegacion</div>
+        <div></div>
     );
 }
 export default GaleriaPage;

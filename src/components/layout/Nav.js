@@ -6,9 +6,9 @@ const Nav = (props) => {
             <div className="holder">
                 <ul>
                     <li><Link to="/">Home</Link></li>
-                    <li><Link to="contacto">Contacto</Link></li>
-                    <li><Link to="galeria">Galeria</Link></li>
                     <li><Link to="productos">Productos</Link></li>
+                    <li><Link to="galeria">Galeria</Link></li>
+                    <li><Link to="contacto">Contacto</Link></li>
                     <li><Link to="registro">Registro</Link></li>
                 </ul>
 

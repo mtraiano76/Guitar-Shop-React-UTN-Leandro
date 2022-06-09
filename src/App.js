@@ -22,8 +22,8 @@ function App() {
         <Routes>
           <Route path='/' element={<HomePage />} />
           <Route path='productos' element={<ProductosPage />} />
-          <Route path='contacto' element={<ContactoPage />} />
           <Route path='galeria' element={<GaleriaPage />} />
+          <Route path='contacto' element={<ContactoPage />} />
           <Route path='registro' element={<RegistroPage />} />
         </Routes>
       </BrowserRouter>
