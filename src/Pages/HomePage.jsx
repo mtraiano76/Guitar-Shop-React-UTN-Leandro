@@ -1,9 +1,11 @@
+
+
+
 const HomePage = (props) => {
     return(
         
         <section>
-    
-   
+          
         </section>
     );
 }

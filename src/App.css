@@ -1,17 +1,19 @@
 .App {
   text-align: center;
+  color: white;
+  font-size: 13px;
+  /*font-family: Verdana, Geneva, Tahoma, sans-serif;*/
+  
+
+}
+body{
+  background-image: url(/public/img/fondo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: center;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
 .App-header {
   background-color: #282c34;
@@ -35,4 +37,57 @@
   to {
     transform: rotate(360deg);
   }
+}
+.App ul{
+  text-align: center;
+  font-weight:bold;
+}
+.App li{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.App a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+
+
+.App button{
+  background-color: rgba(235, 44, 44, 0.733);
+  border-radius: 6px;
+  color: white;
+  font-size: 12px;
+  border-color: azure;
+  margin-left: 5px;
+}
+
+.App form{
+  width: 50%;
+  background-color: rgba(168, 14, 14, 0.658);
+  padding: 14px;
+  margin: auto;
+  margin-top: 25px;
+  border-radius: 4px;
+  color: white;
+  box-shadow: 7px 13px 37px  #000;
+}
+.App input{
+  width: 90%;
+  background: rgb(104, 9, 9);
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid red;
+  font-size: 18px;
+  color: white;
+}
+.App input.button{
+  width: 150px;
+  background: rgb(205, 15, 15);
+  border: 1px solid rgb(170, 170, 170);
+  color: white;
+  margin: 20px 0;
+  font-size: 20px;
+  border-radius:6px;
 }
