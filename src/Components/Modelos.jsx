@@ -68,7 +68,7 @@ function Modelos(){
         return(
             <div>
             <h2>{titulo}</h2>
-            {modelos.map(modelo=><Modelo marca={modelo.title} estilo={modelo.estilo} descripcion={modelo.descripcion} precio={modelo.price} sku={modelo.sku} cantidad={modelo.cantidad} />)}
+            {modelos.map(modelo=><Modelo marca={modelo.title} precio={modelo.price} cantidad={modelo.available_quantity} imagen={modelo.picture} />)}
             <button onClick={handleClick}>Filtrar</button>
             <button onClick={()=>setBuscar('gibson')}>Buscar</button>
         </div>

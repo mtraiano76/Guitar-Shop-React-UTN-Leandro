@@ -4,9 +4,12 @@
 const HomePage = (props) => {
     return(
         
-        <section>
+        <div>
+            
+    
+            
           
-        </section>
+        </div>
     );
 }
 export default HomePage;
