@@ -8,9 +8,9 @@
 }
 body{
   background-image: url(/public/img/fondo.jpg);
-  background-size: cover;
+  /*background-size: cover;
   background-repeat: no-repeat;
-  background-image: center;
+  background-image: center;*/
   
 }
 
@@ -41,6 +41,7 @@ body{
 .App ul{
   text-align: center;
   font-weight:bold;
+  display:contents
 }
 .App li{
   font-family: Verdana, Geneva, Tahoma, sans-serif;

@@ -5,11 +5,13 @@ const Nav = (props) => {
         <nav>
             <div className="holder">
                 <ul>
+                    <p>******************************************************************************************************************</p>
                     <p><Link to="/">Home</Link></p>
                     <p><Link to="productos">Productos</Link></p>
                     <p><Link to="galeria">Galeria</Link></p>
                     <p><Link to="contacto">Contacto</Link></p>
                     <p><Link to="registro">Registro</Link></p>
+                    <p>******************************************************************************************************************</p>
                 </ul>
 
             </div>
