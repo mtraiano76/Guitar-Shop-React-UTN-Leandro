@@ -1,8 +1,7 @@
-import { Link } from "react-router-dom";
+import "../../Components/layout/styles/Header.css"
 
 const Header = (props) => {
     return(
-        
         <header>
             <img src="img/logo.png" width= "100" alt="Guitar Shop"/>
             <h1>GUITAR SHOP</h1>
@@ -11,8 +10,6 @@ const Header = (props) => {
                 <h3>GO TO PLAY <span>MUSIC</span></h3>
             </div>
         </header>
-
-
     );
 }
 export default Header;

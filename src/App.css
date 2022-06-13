@@ -2,56 +2,11 @@
   text-align: center;
   color: white;
   font-size: 13px;
-  /*font-family: Verdana, Geneva, Tahoma, sans-serif;*/
-  
-
 }
+
 body{
   background-image: url(/public/img/fondo.jpg);
-  /*background-size: cover;
-  background-repeat: no-repeat;
-  background-image: center;*/
-  
 }
-
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-.App ul{
-  text-align: center;
-  font-weight:bold;
-  display:contents
-}
-.App li{
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-.App a {
-  color: white;
-  text-decoration: none;
-  font-size: 20px;
-}
-
 
 
 .App button{
@@ -91,7 +46,4 @@ body{
   margin: 20px 0;
   font-size: 20px;
   border-radius:6px;
-}
-.App contenedor{
-
 }

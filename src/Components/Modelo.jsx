@@ -1,4 +1,4 @@
-
+import "../Components/styles/Modelos.css"
 import React,{useState} from "react"
 
 
@@ -9,9 +9,8 @@ function Modelo(props){
         setComprar("¡Gracias por su compra!")
     }
     return(
-        <div>
+        <div className="contenedor">
             <ul>
-                
                 <p>{marca}</p>
                 <p>$ {precio}</p>
                 <p>Cantidad disponible {cantidad}</p>
@@ -19,7 +18,7 @@ function Modelo(props){
                 <button type="button">Ver Detalle</button>
                 <button className="producto_button" onClick={handleClick}>Comprar</button>
                 <p>{comprar}</p>
-                <p>******************************************************************************************************************</p>
+               
             </ul>
         </div>
     )

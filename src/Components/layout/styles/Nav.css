@@ -1,0 +1,19 @@
+nav ul{
+    text-align: center;
+    font-weight:bold;
+    display:contents
+}
+
+nav li{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav a {
+    color:red;
+    text-decoration: none;
+    font-size: 20px;
+
+}
+nav p{
+    color: white;
+}
