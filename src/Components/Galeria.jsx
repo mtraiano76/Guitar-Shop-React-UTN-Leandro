@@ -1,4 +1,6 @@
 
+import "../Components/styles/Galeria.css"
+
 function Galeria(props){
  
     

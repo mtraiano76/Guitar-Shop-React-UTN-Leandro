@@ -2,7 +2,7 @@
 import React,{useState} from "react"
 
 
-function Modelo(props){
+function Modelo5(props){
     const{marca,precio,cantidad,imagen} = props
     const[comprar,setComprar] = useState('')
     const handleClick = ()=>{
@@ -24,5 +24,4 @@ function Modelo(props){
     )
 }
 
-export default Modelo
-
+export default Modelo5
