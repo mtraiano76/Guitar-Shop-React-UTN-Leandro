@@ -1,5 +1,6 @@
 import React from "react"
 import Modelos from "../Components/Modelos"
+import Menu from "../Components/Menu"
 import firebase from "../Config/firebase";
 function HomePage(){
 
@@ -7,6 +8,7 @@ function HomePage(){
     return(
         <div>
                <div className="">
+                <Menu />
                 <Modelos />
             </div>
         </div>
