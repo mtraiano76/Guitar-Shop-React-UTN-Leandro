@@ -1,14 +1,16 @@
 import React from "react"
-import Modelos5 from "../Components/Modelos5"
+import Modelos from "../Components/Modelos"
 import firebase from "../Config/firebase";
 function HomePage(){
+
     console.log(firebase)
     return(
         <div>
                <div className="">
-                <Modelos5 />
+                <Modelos />
             </div>
         </div>
     )
 }
+
 export default HomePage;
