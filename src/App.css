@@ -30,6 +30,26 @@ body{
   box-shadow: 7px 13px 37px  #000;
 }
 
+.App input{
+  width: 90%;
+  background: rgb(104, 9, 9);
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid red;
+  font-size: 18px;
+  color: white;
+}
+.App input.button{
+  width: 150px;
+  background: rgb(205, 15, 15);
+  border: 1px solid rgb(170, 170, 170);
+  color: white;
+  margin: 20px 0;
+  font-size: 20px;
+  border-radius:6px;
+}
+
 
 div.row{
   display: flex;
