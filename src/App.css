@@ -4,13 +4,13 @@
   font-size: 13px;
 }
 
-body{
+body {
   background-image: url(/public/img/fondo.jpg);
   align-items: center;
 }
 
 
-.App button{
+.App button {
   background-color: rgba(235, 44, 44, 0.733);
   border-radius: 6px;
   color: white;
@@ -19,7 +19,7 @@ body{
   margin-left: 5px;
 }
 
-.App form{
+.App form {
   width: 50%;
   background-color: rgba(168, 14, 14, 0.658);
   padding: 14px;
@@ -27,11 +27,11 @@ body{
   margin-top: 25px;
   border-radius: 4px;
   color: white;
-  box-shadow: 7px 13px 37px  #000;
+  box-shadow: 7px 13px 37px #000;
 }
 
-.App input{
-  width: 90%;
+.App input {
+  width: 100%;
   background: rgb(104, 9, 9);
   padding: 10px;
   border-radius: 4px;
@@ -40,53 +40,59 @@ body{
   font-size: 18px;
   color: white;
 }
-.App input.button{
+
+.App input.button {
   width: 150px;
   background: rgb(205, 15, 15);
   border: 1px solid rgb(170, 170, 170);
   color: white;
   margin: 20px 0;
   font-size: 20px;
-  border-radius:6px;
+  border-radius: 6px;
 }
 
 
-div.row{
+div.row {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  
-  
+
+
+
 }
 
-img.card-img-top{
-  height: 130px;
+img.card-img-top {
+  max-width: 100px;
   margin-top: 10px;
+  align-self: center;
+
 
 }
- a.btn.btn-primary{
-  color: yellow;
-  text-decoration: none;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  padding:2%;
- }
 
- a.btn.btn-secondary{
-  color: yellow;
+a.btn.btn-primary {
+  color: white;
   text-decoration: none;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  padding:2%;
- }
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 2%;
+}
 
- div.card{
+
+
+div.card {
   background-color: rgba(220, 20, 60, 0.301);
+  height: 400px;
+  margin: auto;
+}
+
+div.card-title.h5 {
   margin: 5px;
-  width: 200px;
-  height: 270px;
+  font-size: 14px;
+}
 
- }
+textarea {
+  width: 100%;
+}
 
- div.card-title.h5{
-  margin: 5px;
- }
-
+a.navbar-brand {
+  font-size: 25px;
+}

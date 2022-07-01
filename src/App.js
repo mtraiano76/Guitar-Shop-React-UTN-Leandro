@@ -2,9 +2,10 @@ import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import Header from "./Components/layout/Header";
-import Nav from "./Components/layout/Nav";
+import Menu from "./Components/layout/Menu";
 import Footer from "./Components/layout/Footer"
 
+import IndexPage from './Pages/IndexPage';
 import HomePage from './Pages/HomePage';
 import ContactoPage from './Pages/ContactoPage';
 import GaleriaPage from './Pages/GaleriaPage';
@@ -18,9 +19,10 @@ function App() {
       <Header />
      
       <BrowserRouter>
-        <Nav />
+        <Menu />
         <Routes>
-          <Route path='/' element={<HomePage />} />
+          <Route path='/' element={<IndexPage />} />
+          <Route path='home' element={<HomePage />} />
           <Route path='productos' element={<ProductosPage />} />
           <Route path='galeria' element={<GaleriaPage />} />
           <Route path='contacto' element={<ContactoPage />} />

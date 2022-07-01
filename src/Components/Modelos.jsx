@@ -32,7 +32,7 @@ function Modelos(){
     if(loading){
             return(<div>Cargando...</div>)
     }else{
-        const titulo = "Listado de productos Componente funcion"
+        const titulo = "Listado de productos"
         return(
             <div>
                 <h1>{titulo}</h1>

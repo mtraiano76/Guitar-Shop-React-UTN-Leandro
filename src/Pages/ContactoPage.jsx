@@ -1,6 +1,10 @@
+
+
+
+
 const ContactoPage = (props) => {
     return(
-    
+
         <div className="">
         <h2>Fromulario de Contacto</h2>
           <form>

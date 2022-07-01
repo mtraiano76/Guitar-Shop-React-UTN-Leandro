@@ -1,14 +1,15 @@
-import React  from "react"
+import React from "react"
 import Galeria from "../Components/Galeria"
 
 
+
 const GaleriaPage = (props) => {
-    return(
+    return (
         <div>
-        <div className="">
-         <Galeria />
-     </div>
- </div>
+            <div className="">
+                <Galeria />
+            </div>
+        </div>
     );
 }
 export default GaleriaPage;

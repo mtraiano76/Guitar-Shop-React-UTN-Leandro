@@ -6,8 +6,8 @@ const Header = (props) => {
             <img src="img/logo.png" width= "100" alt="Guitar Shop"/>
             <h1>GUITAR SHOP</h1>
             <div class="banner-text">
-                <h2>GUITARS & MORE</h2>
-                <h3>GO TO PLAY <span>MUSIC</span></h3>
+                <h3>GUITARS & MORE</h3>
+                <h4>GO TO PLAY <span>MUSIC</span></h4>
             </div>
         </header>
     );

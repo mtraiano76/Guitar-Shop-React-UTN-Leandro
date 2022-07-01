@@ -1,18 +1,15 @@
 import React from "react"
-import Modelos from "../Components/Modelos"
-import Menu from "../Components/Menu"
-import firebase from "../Config/firebase";
-function HomePage(){
+import Galeria from "../Components/Home"
 
-    console.log(firebase)
-    return(
+
+
+const HomePage = (props) => {
+    return (
         <div>
-               <div className="">
-                <Menu />
-                <Modelos />
+            <div className="">
+                <Galeria />
             </div>
         </div>
-    )
+    );
 }
-
 export default HomePage;
