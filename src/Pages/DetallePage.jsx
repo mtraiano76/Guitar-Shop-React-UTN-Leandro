@@ -1,6 +1,6 @@
 import React,{useState,useEffect} from "react"
 import {useParams} from "react-router-dom"
-import {getByIdProductos} from "../Services/productosServices"
+import {getByIdProductos} from "../Services/modelosServices"
 
 function DetallePage() {
     const {id} = useParams()

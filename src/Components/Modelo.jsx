@@ -24,7 +24,8 @@ function Modelo(props){
         <Card.Text>
             $ {data.price}
         </Card.Text>
-        <Button as={Link} to={'/producto'+ data.id} variant="primary">Ver Detalle</Button>
+        <Button as={Link} to={'/producto/'+ data.id} variant="primary">Ver Detalle</Button>
+        <Button as={Link} to={'/productos/modificar/'+ data.id} variant="primary">Modificar</Button>
 
         
         <div>{comprar}</div>

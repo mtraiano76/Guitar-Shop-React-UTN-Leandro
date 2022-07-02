@@ -22,6 +22,7 @@ function Menu() {
 
               <NavDropdown title="Menu" id="basic-nav-dropdown">
                 <NavDropdown.Item as={Link} to="/productos/alta">Alta</NavDropdown.Item>
+              
            
                 <NavDropdown.Divider />
 

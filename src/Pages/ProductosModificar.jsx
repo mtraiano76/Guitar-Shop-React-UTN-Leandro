@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 import Input from "../Components/Input";
 import {Button,Form} from 'react-bootstrap'
 import {useParams} from "react-router-dom"
-import {getByIdProductos,update,deleteProducto} from "../Services/productosServices"
+import {getByIdProductos,update,deleteProducto} from "../Services/modelosServices"
 function ProductosModificar(){
     const {id} = useParams()
     const [loading,setLoading] = useState(true)

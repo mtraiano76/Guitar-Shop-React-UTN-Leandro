@@ -13,6 +13,8 @@ import ProductosPage from './Pages/ProductosPage';
 import RegistroPage from './Pages/RegistroPage';
 import LoginPage from './Pages/LoginPage';
 import ProductosAlta from './Pages/ProductosAlta';
+import DetallePage from './Pages/DetallePage';
+import ProductosModificar from './Pages/ProductosModificar';
 
 
 function App() {
@@ -28,9 +30,12 @@ function App() {
           <Route path='productos' element={<ProductosPage />} />
           <Route path='galeria' element={<GaleriaPage />} />
           <Route path='contacto' element={<ContactoPage />} />
+          <Route path='/producto/:id' element={<DetallePage />} />
           <Route path='registro' element={<RegistroPage />} />
           <Route path='ingresar' element={<LoginPage />} />
           <Route path='productos/alta' element={<ProductosAlta />} />
+          <Route path='productos/modificar' element={<ProductosModificar />} />
+          
         </Routes>
       </BrowserRouter>
 
