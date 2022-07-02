@@ -6,15 +6,16 @@ import Row from "react-bootstrap/Row"
 function Modelos(){
     const [loading,setLoading] = useState(true)
     const [modelos,setModelos] = useState([])
-    const [buscar,setBuscar] = useState('')
+    const [buscar,setBuscar] = useState('gibson')
 
     useEffect(
         ()=>{
                 const request = async ()=>{
                     try{
-                        const response = await getAllModelos()
+                        const response = await getAllModelos(buscar)
                         console.log(response)
-                        setModelos(response.results)
+                        setModelos(response)
+                        //setModelos(response.results)
                         setLoading(false)
                     }catch(e){
                         console.log(e)
@@ -36,9 +37,10 @@ function Modelos(){
         return(
             <div>
                 <h1>{titulo}</h1>
-            
+                <input value={buscar} onChange={handleChange}></input>
+
                 <Row>
-                    {modelos.map(productoData=><Modelo data={productoData} />)}
+                    {modelos.map(productoData=><Modelo data={{...productoData.data(),...{id: productoData.id}}} />)}
                 </Row>
             </div>
         )

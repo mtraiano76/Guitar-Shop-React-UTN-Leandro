@@ -1,6 +1,7 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import {Link} from "react-router-dom"
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
 function Menu() {
@@ -11,16 +12,19 @@ function Menu() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
+              <Nav.Link as={Link} to="/index">Inicio</Nav.Link>
+              <Nav.Link as={Link} to="/ingresar">Ingresar</Nav.Link>
+              <Nav.Link as={Link} to="/registro">Registro</Nav.Link>
+              <Nav.Link as={Link} to="/home">Home</Nav.Link>
+              <Nav.Link as={Link} to="/productos">Productos</Nav.Link>
+              <Nav.Link as={Link} to="/galeria">Galeria</Nav.Link>
+              <Nav.Link as={Link} to="/contacto">Contacto</Nav.Link>
 
-            <NavDropdown title="Menu" id="basic-nav-dropdown">
-              <NavDropdown.Item href="/home">Home</NavDropdown.Item>
-              <NavDropdown.Item href="/productos">Productos</NavDropdown.Item>
-              <NavDropdown.Item href="/galeria">Galeria</NavDropdown.Item>
-              <NavDropdown.Item href="/contacto">Contacto</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="/registro">
-                Registro
-              </NavDropdown.Item>
+              <NavDropdown title="Menu" id="basic-nav-dropdown">
+                <NavDropdown.Item as={Link} to="/productos/alta">Alta</NavDropdown.Item>
+           
+                <NavDropdown.Divider />
+
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>

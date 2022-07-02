@@ -14,13 +14,12 @@ function DetallePage() {
                     const response = await getByIdProductos(id)
                     console.log("response",response)
                     setLoading(false)
-                    setProducto(response)
+                    setProducto(response.data())
                 }
                 request()
             }catch(e){
                 console.log(e)
             }
-            
         },
         [id]
     )
@@ -29,14 +28,12 @@ function DetallePage() {
     }else{
         return(
             <div className="">
-                <h1>{producto.title}</h1>
-                <p>{producto.currency_id} {producto.price}</p>
-                {producto.pictures.map(image=><img src={image.url}></img>)}
+                <h1>{producto.name}</h1>
+                <p>$ {producto.price}</p>
             </div>
         )
     }
-    
 
-} 
+}
 
 export default DetallePage
