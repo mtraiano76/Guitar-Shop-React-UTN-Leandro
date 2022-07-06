@@ -12,7 +12,8 @@ import ProductosModificar from '../Pages/ProductosModificar';
 function Public() {
   return (
       <Routes>
-        <Route path='/' element={<HomePage />} />
+        <Route path='/' element={<IndexPage />} />
+        <Route path='/home' element={<HomePage />} />
         <Route path='/alta' element={<RegistroPage />} />
         <Route path='/ingresar' element={<LoginPage />} />
         <Route path='/productos/alta' element={<ProductosAlta />}  />

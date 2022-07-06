@@ -1,18 +1,15 @@
 import React from "react"
-import Modelos from "../Components/Modelos"
-import firebase from "../Config/firebase";
 
-function IndexPage() {
 
-    console.log(firebase)
+const IndexPage = (props) => {
     return (
         <div>
             <div className="">
-                <Modelos />
+            <img src="img/index.jpg" alt="Guitar Shop"/>
+               
             </div>
         </div>
-    )
+    );
 }
-
 export default IndexPage;
 

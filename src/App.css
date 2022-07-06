@@ -1,3 +1,8 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+
+
 .App {
   text-align: center;
   color: white;
@@ -7,6 +12,8 @@
 body {
   background-image: url(/public/img/fondo.jpg);
   align-items: center;
+  font-family: "Montserrat" ;
+ 
 }
 
 
