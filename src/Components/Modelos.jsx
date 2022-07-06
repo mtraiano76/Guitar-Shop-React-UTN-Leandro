@@ -6,7 +6,7 @@ import Row from "react-bootstrap/Row"
 function Modelos(){
     const [loading,setLoading] = useState(true)
     const [modelos,setModelos] = useState([])
-    const [buscar,setBuscar] = useState('gibson')
+    const [buscar,setBuscar] = useState('Gibson')
 
     useEffect(
         ()=>{

@@ -5,7 +5,7 @@ import Header from "./Components/layout/Header";
 import Menu from "./Components/layout/Menu";
 import Footer from "./Components/layout/Footer"
 
-import IndexPage from './Pages/IndexPage';
+
 import HomePage from './Pages/HomePage';
 import ContactoPage from './Pages/ContactoPage';
 import GaleriaPage from './Pages/GaleriaPage';
@@ -25,7 +25,7 @@ function App() {
       <BrowserRouter>
         <Menu />
         <Routes>
-          <Route path='/' element={<IndexPage />} />
+   
           <Route path='home' element={<HomePage />} />
           <Route path='productos' element={<ProductosPage />} />
           <Route path='galeria' element={<GaleriaPage />} />

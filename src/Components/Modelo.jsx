@@ -22,7 +22,7 @@ function Modelo(props){
     <Card.Body>
         <Card.Title>{data.name}</Card.Title>
         <Card.Text>
-            $ {data.price}
+         
         </Card.Text>
         <Button as={Link} to={'/producto/'+ data.id} variant="primary">Ver Detalle</Button>
         <Button as={Link} to={'/productos/modificar/'+ data.id} variant="primary">Modificar</Button>

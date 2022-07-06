@@ -86,7 +86,10 @@ div.card {
 
 div.card-title.h5 {
   margin: 5px;
-  font-size: 14px;
+  font-size: 20px;
+}
+p.card-text{
+  color: azure;
 }
 
 textarea {
@@ -101,4 +104,18 @@ a.navbar-brand {
 .navbar-light .navbar-nav .nav-link {
   color: rgba(0,0,0,.55);
   font-size: 22px;
+}
+
+p{
+  font-size: 20px;
+  font-weight: bold;
+  color: yellow;
+}
+div.detalle{
+  background-color: rgba(220, 20, 60, 0.473);
+  width: 50%;
+  margin: auto;
+  border-radius: 6px;
+  margin-top: 50px;
+
 }

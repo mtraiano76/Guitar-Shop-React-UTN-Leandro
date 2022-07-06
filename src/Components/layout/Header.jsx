@@ -7,7 +7,7 @@ const Header = (props) => {
             <h1>GUITAR SHOP</h1>
             <div class="banner-text">
                 <h3>GUITARS & MORE</h3>
-                <h4>GO TO PLAY <span>MUSIC</span></h4>
+            
             </div>
         </header>
     );
