@@ -2,7 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 
-
+*{
+  font-family: "Montserrat" ;
+}
 .App {
   text-align: center;
   color: white;
@@ -12,7 +14,7 @@
 body {
   background-image: url(/public/img/fondo.jpg);
   align-items: center;
-  font-family: "Montserrat" ;
+
  
 }
 
@@ -79,8 +81,11 @@ img.card-img-top {
 a.btn.btn-primary {
   color: white;
   text-decoration: none;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Montserrat";
   padding: 2%;
+  background-color: red;
+  border-color: white;
+  margin: 5px;
 }
 
 
@@ -116,7 +121,7 @@ a.navbar-brand {
 p{
   font-size: 20px;
   font-weight: bold;
-  color: yellow;
+  color: white;
 }
 div.detalle{
   background-color: rgba(220, 20, 60, 0.473);
@@ -125,4 +130,27 @@ div.detalle{
   border-radius: 6px;
   margin-top: 50px;
 
+
+}
+
+
+a.btn.btn-productos {
+  width: 30%;
+  background-color: red;
+  font-family: "Montserrat";
+  color: white;
+}
+
+a.btn.btn-galeria {
+  width: 30%;
+  background-color: rgb(175, 173, 173);
+  color: whitesmoke;
+}
+
+.d-grid {
+  display: grid !important;
+  justify-items: center;
+  margin-bottom: 50px;
+  font-family: "Montserrat";
+  
 }
