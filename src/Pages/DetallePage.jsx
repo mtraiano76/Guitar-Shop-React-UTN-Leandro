@@ -26,7 +26,10 @@ function DetallePage() {
         return (<div>Cargando ...</div>)
     } else {
         return (
+
+            
             <div className="detalle">
+                
                 <p>Marca: {producto.name}</p>
                 <p>Modelo: {producto.description}</p>
                 <p>$ {producto.price}</p>

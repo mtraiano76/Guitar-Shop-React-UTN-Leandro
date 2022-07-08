@@ -46,7 +46,7 @@ function ProductosModificar(){
     }else{
         return(
             <div className="">
-                <Button variant="danger" onClick={handleDelete}>Eliminar</Button>
+               
                 <Form onSubmit={handleSubmit(onSubmit)}>
                     <Input label="Nombre" name="name" register={{...register("name", { required: true, minLength:3 })}} />
                     <div>
@@ -58,7 +58,9 @@ function ProductosModificar(){
                         {errors.lastname && <span>El campo es obligatorio</span>}
                     </div>
                     <Input label="Descripcion" type="text" name="description" register={{...register("description", { required: true})}} />
-                    <Button type="submit" variant="primary">Guardar</Button>
+                    <Button variant="outline-success">Guardar</Button>
+                    <Button variant="danger" onClick={handleDelete}>Eliminar</Button>
+                    
                 </Form>
             </div>
         )

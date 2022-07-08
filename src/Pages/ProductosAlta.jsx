@@ -23,6 +23,7 @@ function ProductosAlta(){
    
     return(
         <div className="">
+            <h3>ALTA DE PRODUCTO</h3>
             <Form onSubmit={handleSubmit(onSubmit)}>
                 <Input label="Nombre" name="name" register={{...register("name", { required: true, minLength:3 })}} />
                 <div>

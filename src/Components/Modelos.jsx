@@ -33,10 +33,10 @@ function Modelos(){
     if(loading){
             return(<div>Cargando...</div>)
     }else{
-        const titulo = "Listado de productos"
+        const titulo = "PRODUCTOS"
         return(
             <div>
-                <h1>{titulo}</h1>
+                <h3>{titulo}</h3>
                 <input value={buscar} onChange={handleChange}></input>
 
                 <Row>
