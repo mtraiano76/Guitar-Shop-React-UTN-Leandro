@@ -34,7 +34,7 @@ function App() {
           <Route path='registro' element={<RegistroPage />} />
           <Route path='ingresar' element={<LoginPage />} />
           <Route path='productos/alta' element={<ProductosAlta />} />
-          <Route path='productos/modificar' element={<ProductosModificar />} />
+          <Route path='/productos/modificar/:id' element={<ProductosModificar />}  />
           
         </Routes>
       </BrowserRouter>
