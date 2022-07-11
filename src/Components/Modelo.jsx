@@ -7,7 +7,7 @@ const style = {
 }
 
 function Modelo(props){
-    const {data} = props
+    const {data,id} = props
     console.log(data)
     const[comprar,setComprar] = useState('')
     const handleClick = ()=>{
@@ -24,8 +24,8 @@ function Modelo(props){
         <Card.Text>
          
         </Card.Text>
-        <Button as={Link} to={'/producto/'+ data.id} variant="primary">Ver Detalle</Button>
-        <Button as={Link} to={'/productos/modificar/'+ data.id} variant="primary">Modificar</Button>
+        <Button as={Link} to={'/producto/'+id} variant="primary">Ver Detalle</Button>
+        <Button as={Link} to={'/productos/modificar/'+id} variant="primary">Modificar</Button>
 
         
         <div>{comprar}</div>

@@ -40,7 +40,7 @@ function Modelos(){
                 <input value={buscar} onChange={handleChange}></input>
 
                 <Row>
-                    {modelos.map(productoData=><Modelo data={{...productoData.data(),...{id: productoData.id}}} />)}
+                    {modelos.map(productoData=><Modelo key={productoData.id}data={productoData.data()} id={productoData.id} />)}
                 </Row>
             </div>
         )

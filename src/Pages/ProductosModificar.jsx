@@ -4,11 +4,11 @@ import Input from "../Components/Input";
 import {Button,Form} from 'react-bootstrap'
 import {useParams} from "react-router-dom"
 import {getByIdProductos,update,deleteProducto} from "../Services/modelosServices"
-
+import Loading from "../Components/Loading";
 function ProductosModificar(){
     const {id} = useParams()
     const [loading,setLoading] = useState(true)
-    const { register, handleSubmit,setValue, watch, formState: { errors } } = useForm();
+    const { register, handleSubmit,setValue, formState: { errors } } = useForm();
     const onSubmit = async (data)=>{
         console.log("data",data)
         try{
@@ -36,17 +36,15 @@ function ProductosModificar(){
             }
             
         },
-        [id]
+        [id,setValue]
     )
     const handleDelete = async ()=>{
         await deleteProducto(id)
     }
-    if(loading){
-        return (<div>Cargando...</div>)
-    }else{
-        return(
+    return(
+        <Loading loading={loading}>
             <div className="">
-               
+                <Button variant="danger" onClick={handleDelete}>Eliminar</Button>
                 <Form onSubmit={handleSubmit(onSubmit)}>
                     <Input label="Nombre" name="name" register={{...register("name", { required: true, minLength:3 })}} />
                     <div>
@@ -58,13 +56,11 @@ function ProductosModificar(){
                         {errors.lastname && <span>El campo es obligatorio</span>}
                     </div>
                     <Input label="Descripcion" type="text" name="description" register={{...register("description", { required: true})}} />
-                    <Button variant="outline-success">Guardar</Button>
-                    <Button variant="danger" onClick={handleDelete}>Eliminar</Button>
-                    
+                    <Button type="submit" variant="primary">Guardar</Button>
                 </Form>
             </div>
-        )
-    }
+        </Loading>
+    )
     
 } 
 
