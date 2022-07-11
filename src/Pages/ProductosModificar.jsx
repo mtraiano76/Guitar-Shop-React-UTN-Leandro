@@ -34,7 +34,7 @@ function ProductosModificar(){
             }catch(e){
                 console.log(e)
             }
-            
+
         },
         [id,setValue]
     )
@@ -61,7 +61,6 @@ function ProductosModificar(){
             </div>
         </Loading>
     )
-    
-} 
+}
 
 export default ProductosModificar

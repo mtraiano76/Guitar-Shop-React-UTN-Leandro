@@ -22,12 +22,11 @@ function Modelo(props){
     <Card.Body>
         <Card.Title>{data.name}</Card.Title>
         <Card.Text>
-         
         </Card.Text>
         <Button as={Link} to={'/producto/'+id} variant="primary">Ver Detalle</Button>
         <Button as={Link} to={'/productos/modificar/'+id} variant="primary">Modificar</Button>
 
-        
+
         <div>{comprar}</div>
     </Card.Body>
 </Card>
