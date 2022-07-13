@@ -2,6 +2,7 @@ import React,{useState,useEffect} from "react"
 import Modelo from "./Modelo"
 import {getAllModelos} from '../Services/modelosServices'
 import Row from "react-bootstrap/Row"
+import Loading from "./Loading"
 
 function Modelos(){
     const [loading,setLoading] = useState(true)
@@ -30,11 +31,9 @@ function Modelos(){
         const value = event.target.value
         setBuscar(value)
     }
-    if(loading){
-            return(<div>Cargando...</div>)
-    }else{
-        const titulo = "PRODUCTOS"
-        return(
+    const titulo = "PRODUCTOS"
+    return(
+        <Loading loading={loading} configuration={{variant:"danger"}}>
             <div>
                 <h3>{titulo}</h3>
                 <input value={buscar} onChange={handleChange}></input>
@@ -43,9 +42,10 @@ function Modelos(){
                     {modelos.map(productoData=><Modelo key={productoData.id}data={productoData.data()} id={productoData.id} />)}
                 </Row>
             </div>
+            </Loading>
         )
     }
-}
+
 
 export default Modelos
 

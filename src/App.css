@@ -61,7 +61,7 @@ body {
 }
 
 
-div.row {
+/*div.row {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -76,7 +76,7 @@ img.card-img-top {
   align-self: center;
 
 
-}
+}*/
 
 a.btn.btn-primary {
   color: white;
@@ -92,8 +92,8 @@ a.btn.btn-primary {
 
 div.card {
   background-color: rgba(220, 20, 60, 0.301);
-  height: 400px;
-  margin: auto;
+  /*height: 400px;
+  margin: auto;*/
 }
 
 div.card-title.h5 {

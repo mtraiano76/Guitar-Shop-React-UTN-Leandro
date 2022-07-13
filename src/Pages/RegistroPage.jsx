@@ -1,12 +1,15 @@
 import React,{useState} from "react"
 import { useForm } from "react-hook-form";
 import Input from "../Components/Input";
-import {Button,Form} from 'react-bootstrap'
+import {Form} from 'react-bootstrap'
 import firebase from "../Config/firebase"
+import ButtonWithLoading from "../Components/ButtonWithLoading";
 
 function RegistroPage(){
-    const { register, handleSubmit, watch, formState: { errors } } = useForm();
+    const { register, handleSubmit, formState: { errors } } = useForm();
+    const [ loading, setLoading ] = useState (false)
     const onSubmit = async (data)=>{
+        setLoading(true)
         console.log("data",data)
         try{
             const responseUser = await firebase.auth.createUserWithEmailAndPassword(data.email,data.password)
@@ -20,9 +23,11 @@ function RegistroPage(){
                     userId:responseUser?.user?.uid
                 })
                 console.log(document)
+                setLoading(false)
             }
         }catch(e){
             console.log(e)
+            setLoading(false)
         }
 
     }
@@ -41,7 +46,7 @@ function RegistroPage(){
                 </div>
                 <Input label="Email" type="email" name="email" register={{...register("email", { required: true})}} />
                 <Input label="Contraseña" type="password" name="password" register={{...register("password", { required: true})}} />
-                <Button type="submit" variant="primary">Registro</Button>
+                <ButtonWithLoading loading={loading}>Registrar</ButtonWithLoading>
             </Form>
         </div>
     )

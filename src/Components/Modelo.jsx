@@ -16,14 +16,15 @@ function Modelo(props){
     }
     return(
 
-<Col>
-<Card style={style.card}>
-    <Card.Img variant="top" src={data.thumbnail} />
-    <Card.Body>
-        <Card.Title>{data.name}</Card.Title>
-        <Card.Text>
+<Col xs={12} sm={6} xxl={3}> {/* con esto damos tamaño a las cards*/}
+    <Card >
+        
+            <Card.Img variant="top" src={data.thumbnail} />
+            <Card.Body>
+            <Card.Title>{data.name}</Card.Title>
+            <Card.Text>
          
-        </Card.Text>
+            </Card.Text>
         <Button as={Link} to={'/producto/'+id} variant="primary">Ver Detalle</Button>
         <Button as={Link} to={'/productos/modificar/'+id} variant="primary">Modificar</Button>
 
