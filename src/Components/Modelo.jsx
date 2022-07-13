@@ -16,6 +16,7 @@ function Modelo(props){
     }
     return(
 
+<<<<<<< HEAD
 <Col xs={12} sm={6} xxl={3}> {/* con esto damos tamaño a las cards*/}
     <Card >
         
@@ -25,10 +26,19 @@ function Modelo(props){
             <Card.Text>
          
             </Card.Text>
+=======
+<Col>
+<Card style={style.card}>
+    <Card.Img variant="top" src={data.thumbnail} />
+    <Card.Body>
+        <Card.Title>{data.name}</Card.Title>
+        <Card.Text>
+        </Card.Text>
+>>>>>>> eb837fa09b036c5a129574684c3c62165c91d847
         <Button as={Link} to={'/producto/'+id} variant="primary">Ver Detalle</Button>
         <Button as={Link} to={'/productos/modificar/'+id} variant="primary">Modificar</Button>
 
-        
+
         <div>{comprar}</div>
     </Card.Body>
 </Card>

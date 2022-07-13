@@ -3,11 +3,19 @@ import { useForm } from "react-hook-form";
 import Input from "../Components/Input";
 import {Form} from 'react-bootstrap'
 import firebase from "../Config/firebase"
+<<<<<<< HEAD
 import ButtonWithLoading from "../Components/ButtonWithLoading";
 
 function RegistroPage(){
     const { register, handleSubmit, formState: { errors } } = useForm();
     const [ loading, setLoading ] = useState (false)
+=======
+import ButtonWithLoading from "../Components/ButtonWithLoading"
+
+function RegistroPage(){
+    const { register, handleSubmit, formState: { errors } } = useForm();
+    const [loading,setLoading]=useState(false);
+>>>>>>> eb837fa09b036c5a129574684c3c62165c91d847
     const onSubmit = async (data)=>{
         setLoading(true)
         console.log("data",data)
