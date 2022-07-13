@@ -23,10 +23,6 @@ function DetallePage() {
         },
         [id]
     )
-<<<<<<< HEAD
-=======
-
->>>>>>> eb837fa09b036c5a129574684c3c62165c91d847
     return (
         <Loading loading={loading}>
             <div className="detalle">
@@ -35,14 +31,8 @@ function DetallePage() {
                 <p>$ {producto.price}</p>
             </div>
         </Loading>
-<<<<<<< HEAD
-        )
-    }
-=======
     )
 }
 
-
->>>>>>> eb837fa09b036c5a129574684c3c62165c91d847
 
 export default DetallePage

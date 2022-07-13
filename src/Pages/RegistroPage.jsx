@@ -1,63 +1,56 @@
-import React,{useState} from "react"
+import React, { useState } from "react"
 import { useForm } from "react-hook-form";
 import Input from "../Components/Input";
-import {Form} from 'react-bootstrap'
+import { Form } from 'react-bootstrap'
 import firebase from "../Config/firebase"
-<<<<<<< HEAD
 import ButtonWithLoading from "../Components/ButtonWithLoading";
 
-function RegistroPage(){
+function RegistroPage() {
     const { register, handleSubmit, formState: { errors } } = useForm();
-    const [ loading, setLoading ] = useState (false)
-=======
-import ButtonWithLoading from "../Components/ButtonWithLoading"
+    const [loading, setLoading] = useState(false)
 
-function RegistroPage(){
-    const { register, handleSubmit, formState: { errors } } = useForm();
-    const [loading,setLoading]=useState(false);
->>>>>>> eb837fa09b036c5a129574684c3c62165c91d847
-    const onSubmit = async (data)=>{
+    const onSubmit = async (data) => {
         setLoading(true)
-        console.log("data",data)
-        try{
-            const responseUser = await firebase.auth.createUserWithEmailAndPassword(data.email,data.password)
+        console.log("data", data)
+        try {
+            const responseUser = await firebase.auth.createUserWithEmailAndPassword(data.email, data.password)
             console.log(responseUser.user.uid)
-            if(responseUser.user.uid){
+            if (responseUser.user.uid) {
                 console.log("responseUser")
                 const document = await firebase.db.collection("usuarios")
-                .add({
-                    name:data.name,
-                    lastname:data.lastname,
-                    userId:responseUser?.user?.uid
-                })
+                    .add({
+                        name: data.name,
+                        lastname: data.lastname,
+                        userId: responseUser?.user?.uid
+                    })
                 console.log(document)
                 setLoading(false)
             }
-        }catch(e){
+        } catch (e) {
             console.log(e)
             setLoading(false)
         }
 
     }
 
-    return(
+    return (
         <div className="">
             <Form onSubmit={handleSubmit(onSubmit)}>
-                <Input label="Nombre" name="name" register={{...register("name", { required: true, minLength:3 })}} />
+                <Input label="Nombre" name="name" register={{ ...register("name", { required: true, minLength: 3 }) }} />
                 <div>
-                    {errors.name?.type==="required" && <span>El campo es obligatorio</span>}
-                    {errors.name?.type==="minLength" && <span>Debe introducir al menos 3 caracteres</span>}
+                    {errors.name?.type === "required" && <span>El campo es obligatorio</span>}
+                    {errors.name?.type === "minLength" && <span>Debe introducir al menos 3 caracteres</span>}
                 </div>
-                <Input label="Apellido" name="lastname" register={{...register("lastname", { required: true})}} />
+                <Input label="Apellido" name="lastname" register={{ ...register("lastname", { required: true }) }} />
                 <div>
                     {errors.lastname && <span>El campo es obligatorio</span>}
                 </div>
-                <Input label="Email" type="email" name="email" register={{...register("email", { required: true})}} />
-                <Input label="Contraseña" type="password" name="password" register={{...register("password", { required: true})}} />
+                <Input label="Email" type="email" name="email" register={{ ...register("email", { required: true }) }} />
+                <Input label="Contraseña" type="password" name="password" register={{ ...register("password", { required: true }) }} />
                 <ButtonWithLoading loading={loading}>Registrar</ButtonWithLoading>
             </Form>
         </div>
     )
-} 
+}
 
 export default RegistroPage
