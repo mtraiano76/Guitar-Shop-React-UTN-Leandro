@@ -1,9 +1,10 @@
 import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import React, {useState} from 'react';
 
 import Header from "./Components/layout/Header";
 import Menu from "./Components/layout/Menu";
-import Footer from "./Components/layout/Footer"
+import Footer from "./Components/layout/Footer";
 
 import IndexPage from './Pages/IndexPage';
 import HomePage from './Pages/HomePage';
@@ -18,12 +19,13 @@ import ProductosModificar from './Pages/ProductosModificar';
 
 
 function App() {
+  const [isLogin, setLogin] = useState(false)
   return (
     <div className="App">
       <Header />
      
       <BrowserRouter>
-        <Menu />
+        <Menu isLogin={isLogin} />
         <Routes>
           <Route path='/' element={<IndexPage />} />
           <Route path='home' element={<HomePage />} />
